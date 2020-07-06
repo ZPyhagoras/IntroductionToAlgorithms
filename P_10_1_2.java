@@ -47,7 +47,6 @@ public class P_10_1_2 {
 
     public int popL() throws StackException {
         if (!isEmptyL()) {
-            buffer[left] = 0;
             left--;
             return buffer[left];
         }
@@ -59,7 +58,6 @@ public class P_10_1_2 {
 
     public int popR() throws StackException {
         if (!isEmptyR()) {
-            buffer[right] = 0;
             right++;
             return buffer[right];
         }
